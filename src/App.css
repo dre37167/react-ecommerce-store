@@ -7,21 +7,21 @@
 }
 
 body{
-  font-family: 'ZCOOL QingKe HuangYou', cursive!important;
-  background: --mainWhite !important;
-  color: --mainDark !important;
+  font-family: 'Oswald', sans-serif!important;
+  background: var(--mainWhite) !important;
+  color: var(--mainDark) !important;
 }
 
 .text-title{
-  font-family: 'Indie Flower', cursive;
+  font-family: 'Permanent Marker', cursive;
   letter-spacing: 0.3rem;
   text-transform: uppercase;
 }
 
 .text-blue{
-  color: --mainBlue;
+  color: var(--mainBlue);
 }
 
 .text-bright{
-  color: --lightBlue;
+  color: var(--lightBlue);
 }
