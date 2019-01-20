@@ -1,5 +1,3 @@
-/*
-https://cdn3.iconfinder.com/data/icons/wpzoom-developer-icon-set/500/09-512.png */
 
 export const storeProducts = [
   {

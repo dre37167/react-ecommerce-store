@@ -10,11 +10,11 @@ import {ButtonContainer} from './Button'
 export default class Navbar extends Component{
   render(){
     return(
-      <NavWrapper class="navbar navbar-expand-sm navbar-dark px-sm-5">
+      <NavWrapper class="navbar navbar-expand-sm bg-primary navbar-dark px-sm-5">
 
       <Link to='/'>
       <img src={logo} alt="store"
-      className="Navbar-band" />
+      className="Navbar-brand" />
       </Link>
         <ul className="Navbar-nav align-items-center">
           <li className="nav-item ml-5">
