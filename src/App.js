@@ -10,6 +10,8 @@ import Default from './components/Default';
 import Details from './components/Details';
 import Cart from './components/Cart';
 import Modal from './components/Modal';
+import Login from './components/Login';
+
 
 
 
@@ -27,6 +29,7 @@ class App extends Component {
           <Route component={Default} />
         </Switch>
         <Modal />
+        <Login />
       </div>
     );
   }

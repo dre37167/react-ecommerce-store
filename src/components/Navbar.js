@@ -3,6 +3,7 @@ import {Link} from 'react-router-dom';
 import logo from '../logo.png';
 import styled from 'styled-components';
 import { ButtonContainer } from './Button'
+import Login from './Login';
 
 
 
@@ -20,6 +21,11 @@ export default class Navbar extends Component{
           <li className="nav-item ml-5">
             <Link to="/" className="nav-link">
               products
+            </Link>
+          </li>
+          <li className="Login" className="nav-link">
+            <Link to="/Login" className="nav-link">
+              Login
             </Link>
           </li>
         </ul>

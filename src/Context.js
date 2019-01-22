@@ -70,7 +70,7 @@ class ProductProvider extends Component{
   }
   closeModal = () =>{
     this.setState(()=>{
-      return {modalOpen:false}
+      return {modalOpen:false};
     })
   };
 
@@ -91,7 +91,7 @@ class ProductProvider extends Component{
 
   };
 
-  decrement = id =>{
+  decrement = (id) =>{
     let tempCart = [...this.state.cart];
     const selectedProduct = tempCart.find(item=>item.id === id)
 
@@ -101,7 +101,7 @@ class ProductProvider extends Component{
   product.count = product.count -1;
 
   if(product.count === 0){
-    this.removeItem(id)
+    this.removeItem(id);
   }
   else {
     product.total = product.count * product.price;
@@ -115,7 +115,7 @@ class ProductProvider extends Component{
 
   };
 
-  removeItem = id =>{
+  removeItem = id=>{
    let tempProducts = [...this.state.products];
    let tempCart = [...this.state.cart];
 
@@ -146,7 +146,8 @@ this.addTotals();
     }, () => {
       this.setProducts();
       this.addTotals();
-    });
+    }
+  );
   };
 
   addTotals = () => {
