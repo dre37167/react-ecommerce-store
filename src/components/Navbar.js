@@ -2,7 +2,7 @@ import React, { Component} from 'react';
 import {Link} from 'react-router-dom';
 import logo from '../logo.png';
 import styled from 'styled-components';
-import {ButtonContainer} from './Button'
+import { ButtonContainer } from './Button'
 
 
 
@@ -10,9 +10,9 @@ import {ButtonContainer} from './Button'
 export default class Navbar extends Component{
   render(){
     return(
-      <NavWrapper class="navbar navbar-expand-sm bg-primary navbar-dark px-sm-5">
+      <NavWrapper className="navbar navbar-expand-sm bg-primary navbar-dark px-sm-5">
 
-      <Link to='/'>
+      <Link to="/">
       <img src={logo} alt="store"
       className="Navbar-brand" />
       </Link>
@@ -26,7 +26,7 @@ export default class Navbar extends Component{
         <Link to='/cart' className="ml-auto">
           <ButtonContainer>
             <span className="mr-2">
-            <i className="fas fa-cart-plus"></i>
+            <i className="fas fa-cart-plus" />
             </span>
             my cart
           </ButtonContainer>
@@ -39,7 +39,7 @@ export default class Navbar extends Component{
 const NavWrapper = styled.nav
  `background: var(--mainBlue);
   .nav-link{
-  color:var(--mainWhite)!important;
+  color:var(--mainWhite) !important;
   font-size:1.3rem;
   text-transform: capitalize;
 }`

@@ -18,8 +18,8 @@ margin:0.2rem 0.5rem 0.2rem 0;
 transition:all 0.5s ease-in-out;
 &:hover{
   background: ${prop =>
-    prop.cart ? "var(--mainYellow)": "var(--lightBlue)"};
-  color:var(--mainBlue);
+    prop.cart ? "var(--mainBlue)": "var(--mainBlue)"};
+  color:var(--mainYellow);
 }
 &:focus{
   outline: none;
