@@ -40,8 +40,8 @@ class ProductProvider extends Component{
   handleDetail = (id) =>{
     const product = this.getItem(id);
     this.setState(()=>{
-      return {detailProduct:product}
-    })
+      return {detailProduct:product};
+    });
   };
   addToCart = (id) =>{
     let tempProducts = [...this.state.products];
@@ -91,7 +91,7 @@ class ProductProvider extends Component{
 
   };
 
-  decrement = (id) =>{
+  decrement = id =>{
     let tempCart = [...this.state.cart];
     const selectedProduct = tempCart.find(item=>item.id === id)
 
@@ -115,7 +115,7 @@ class ProductProvider extends Component{
 
   };
 
-  removeItem = id=>{
+  removeItem = id =>{
    let tempProducts = [...this.state.products];
    let tempCart = [...this.state.cart];
 
