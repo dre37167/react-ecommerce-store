@@ -31,8 +31,8 @@ class App extends Component {
 userHasAuthenticated = authenticated => {
   this.setState({ isAuthenticated: authenticated });
 }
-  render() {
-    const childProps = {
+render(){
+  const childProps = {
   isAuthenticated: this.state.isAuthenticated,
   userHasAuthenticated: this.userHasAuthenticated
 };

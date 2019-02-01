@@ -33,6 +33,7 @@ export default class Login extends Component {
     alert(e.message);
   }
 }
+
   render() {
     return (
       <div className="Login">
@@ -54,21 +55,13 @@ export default class Login extends Component {
               type="password"
             />
           </FormGroup>
-          <Button 
-            block
-            bsSize="large"
-            disabled={!this.validateForm()}
-            type="submit"
-          >
-            Login
-          </Button>
           <Button
             block
             bsSize="large"
             disabled={!this.validateForm()}
             type="submit"
           >
-            Logout
+            Login
           </Button>
         </form>
       </div>
